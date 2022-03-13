@@ -80,3 +80,13 @@ function installOnedriver() {
 	fi
 	
 }
+
+# Check for root, virt, OS...
+initialCheck
+# Check if WireGuard is already installed and load params
+if [[ -e /etc/wireguard/params ]]; then
+	source /etc/wireguard/params
+	manageMenu
+else
+	installOnedriver
+fi
