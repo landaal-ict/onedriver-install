@@ -79,7 +79,6 @@ function installOnedriver() {
     zypper install onedriver
 	fi
 
-
 # Check for root, virt, OS...
 initialCheck
 # Check if WireGuard is already installed and load params
