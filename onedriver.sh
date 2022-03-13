@@ -78,8 +78,7 @@ function installOnedriver() {
     zypper --gpg-auto-import-keys refresh
     zypper install onedriver
 	fi
-	
-}
+
 
 # Check for root, virt, OS...
 initialCheck
